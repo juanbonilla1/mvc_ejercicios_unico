@@ -3,7 +3,7 @@ from .modelos.conexion import get_db, init_db
 
 bp = Blueprint('gestion_ventas', __name__, template_folder='templates')
 
-@bp.before_app_first_request
+@bp.before_app_request
 def start():
     init_db()
 
