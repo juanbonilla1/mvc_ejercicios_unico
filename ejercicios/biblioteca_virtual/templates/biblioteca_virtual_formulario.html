@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo biblioteca virtual</h2>
+<form method="post">
+<label>titulo</label><input name='titulo' required><br><br>
+<label>autor</label><input name='autor' required><br><br>
+<label>anio</label><input name='anio' required><br><br>
+<label>genero</label><input name='genero' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('biblioteca_virtual.listado') }}">Volver</a>
+</body></html>

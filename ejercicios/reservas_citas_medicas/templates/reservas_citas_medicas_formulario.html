@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo reservas citas medicas</h2>
+<form method="post">
+<label>paciente</label><input name='paciente' required><br><br>
+<label>fecha</label><input name='fecha' required><br><br>
+<label>hora</label><input name='hora' required><br><br>
+<label>motivo</label><input name='motivo' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('reservas_citas_medicas.listado') }}">Volver</a>
+</body></html>

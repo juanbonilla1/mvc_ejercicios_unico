@@ -1,0 +1,13 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo foro comentarios</h2>
+<form method="post">
+<label>nombre</label><input name='nombre' required><br><br>
+<label>mensaje</label><input name='mensaje' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('foro_comentarios.listado') }}">Volver</a>
+</body></html>

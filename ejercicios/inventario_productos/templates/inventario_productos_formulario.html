@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo inventario productos</h2>
+<form method="post">
+<label>nombre</label><input name='nombre' required><br><br>
+<label>precio</label><input name='precio' required><br><br>
+<label>cantidad</label><input name='cantidad' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('inventario_productos.listado') }}">Volver</a>
+</body></html>

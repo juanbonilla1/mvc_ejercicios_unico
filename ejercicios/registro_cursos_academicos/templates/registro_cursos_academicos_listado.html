@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Listado</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head><body>
+<h2>Registro Cursos Academicos</h2>
+<a href="{{ url_for('registro_cursos_academicos.nuevo') }}">➕ Nuevo</a>
+<table><thead><tr><th>ID</th><th>curso</th><th>docente</th><th>creditos</th><th>Acción</th></tr></thead>
+<tbody>
+{% for row in items %}
+<tr>
+  <td>{{ row['id'] }}</td><td>{{ row['curso'] }}</td><td>{{ row['docente'] }}</td><td>{{ row['creditos'] }}</td>
+  <td><a href="{{ url_for('registro_cursos_academicos.eliminar', id=row['id']) }}" onclick="return confirmarEliminacion()">Eliminar</a></td>
+</tr>
+{% endfor %}
+</tbody></table>
+<a href="/">Inicio</a>
+</body></html>

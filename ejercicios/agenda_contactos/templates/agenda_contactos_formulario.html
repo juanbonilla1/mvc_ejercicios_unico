@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo agenda contactos</h2>
+<form method="post">
+<label>nombre</label><input name='nombre' required><br><br>
+<label>telefono</label><input name='telefono' required><br><br>
+<label>direccion</label><input name='direccion' required><br><br>
+<label>correo</label><input name='correo' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('agenda_contactos.listado') }}">Volver</a>
+</body></html>

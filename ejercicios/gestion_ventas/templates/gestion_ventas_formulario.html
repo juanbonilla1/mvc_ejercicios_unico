@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo gestion ventas</h2>
+<form method="post">
+<label>producto</label><input name='producto' required><br><br>
+<label>cliente</label><input name='cliente' required><br><br>
+<label>fecha</label><input name='fecha' required><br><br>
+<label>total</label><input name='total' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('gestion_ventas.listado') }}">Volver</a>
+</body></html>

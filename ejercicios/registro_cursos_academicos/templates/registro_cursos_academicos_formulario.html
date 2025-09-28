@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nuevo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head><body>
+<h2>Nuevo registro cursos academicos</h2>
+<form method="post">
+<label>curso</label><input name='curso' required><br><br>
+<label>docente</label><input name='docente' required><br><br>
+<label>creditos</label><input name='creditos' required><br><br>
+
+<input type="submit" value="Guardar">
+</form>
+<a href="{{ url_for('registro_cursos_academicos.listado') }}">Volver</a>
+</body></html>

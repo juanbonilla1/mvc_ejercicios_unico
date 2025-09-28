@@ -1,0 +1,1 @@
+function confirmarEliminacion(){return confirm('¿Confirmar eliminación?');}
