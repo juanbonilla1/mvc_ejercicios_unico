@@ -20,7 +20,13 @@ cd mvc_ejercicios_unico
 docker build -t mvc_ejercicios_unico .
 docker run -d -p 5000:5000 mvc_ejercicios_unico
 
+## WINDOWS 
+
 git clone https://github.com/juanbonilla1/mvc_ejercicios_unico.git
 cd mvc_ejercicios_unico
 docker build -t mvc_ejercicios_unico .
 docker run -d -p 5000:5000 mvc_ejercicios_unico
+
+### EJECUTAR EN NAVEGADOR    
+http://localhost:5000/
+
